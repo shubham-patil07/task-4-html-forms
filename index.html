@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+        }
+        .form-box {
+            width: 400px;
+            background: #fff;
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 8px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        .inline {
+            width: auto;
+        }
+        button {
+            margin-top: 15px;
+            padding: 10px;
+            width: 100%;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-box">
+    <h2>Contact Us</h2>
+
+    <form>
+        <!-- Text Field -->
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <!-- Email Field -->
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <!-- Radio Buttons -->
+        <label>Gender</label>
+        <input type="radio" name="gender" class="inline" required> Male
+        <input type="radio" name="gender" class="inline"> Female
+
+        <!-- Dropdown -->
+        <label>Subject</label>
+        <select required>
+            <option value="">Select Subject</option>
+            <option>Web Development</option>
+            <option>UI/UX</option>
+            <option>Support</option>
+        </select>
+
+        <!-- Checkboxes -->
+        <label>Skills</label>
+        <input type="checkbox" class="inline"> HTML
+        <input type="checkbox" class="inline"> CSS
+        <input type="checkbox" class="inline"> JavaScript
+
+        <!-- Textarea -->
+        <label>Message</label>
+        <textarea rows="4" placeholder="Write your message"></textarea>
+
+        <!-- Submit -->
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
